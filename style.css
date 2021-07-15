@@ -1,0 +1,176 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins,sans-serif;
+}
+/* ------------Header part edit here-------------- */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(30, 202, 224, 0.815);
+    padding:40px 0px;
+    
+}
+#container{
+    width:85%;
+    display: flex;
+}
+.contain{
+    width:50%;
+}
+.banner-image{
+    width:100%;
+    animation:animate 2s infinite linear alternate;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+}
+.contain h1{
+   font-size: 50px;
+   margin-bottom: 0px;
+}
+.contain p{
+    margin-bottom: 0px;
+}
+.contain a{
+    padding: 10px 50px;
+    background-color: rgba(0, 140, 255, 0.828);
+    display: inline-block;
+    margin-top:5%;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    border:2px solid black;
+    border-radius:5px ;
+}
+ 
+/* -----------Main part start here ---------------*/
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+article{
+    width:85%;
+    margin:10% 0%;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px; 
+    grid-row-gap: 20px;
+}
+.blog{
+    box-shadow: 3px 2px 70px 2px rgb(211, 211, 211);
+    padding: 20px;
+}
+.blog img{
+      width:100%;
+      border-radius:20px
+}
+.blog h3{
+    font-size:30px ;
+    margin-bottom: 0px;
+}
+.blog p{
+    
+    font-size: 16px;
+    text-align: justify;
+}
+/* -----extra part ------  */
+#extra-header{
+    margin-bottom: 10%;
+}
+.messi{
+    width: 100%;
+}
+#extra-info{
+    text-align: right;
+}
+/* -----------------footer part strat here ---------- */
+footer{
+    width:100%;
+    text-align: center;
+}
+.copyright-text h4{
+    font-size: 16px;
+    color: gray;
+    word-spacing: 5px;
+
+}
+
+/* -------------------
+Media responsive start ------------ */
+@media   only screen and (max-width:480px) and (min-width:320px){
+    header{
+        
+        display:flex;
+        padding:5% 0% ;
+       
+    }
+    #container{
+        width:85%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contain{
+        width: 100%;
+    }
+    .conatin h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+     }
+     .contain a{
+        padding: 10px 40px;
+        background-color: rgba(0, 140, 255, 0.828);
+        display: inline-block;
+        margin-top:5%;
+        margin-bottom: 5%;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        border:2px solid black;
+        border-radius:5px ;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    article{
+        width:90%;
+        margin:10% 0%;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 20px;
+    }
+    #extra-header{
+        margin-bottom: 5%;
+    }
+    .logo-image img{
+        width:300px;
+    }
+    .copyright-text h4{
+        font-size: 14px;
+    }
+
+
+}
