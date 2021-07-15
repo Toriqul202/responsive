@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: poppins,sans-serif;
+   
 }
 /* ------------Header part edit here-------------- */
 header{
@@ -36,11 +37,11 @@ header{
     }
 }
 .contain h1{
-   font-size: 50px;
+   font-size: 40px;
    margin-bottom: 0px;
 }
 .contain p{
-    margin-bottom: 0px;
+    margin-bottom: px;
 }
 .contain a{
     padding: 10px 50px;
@@ -92,6 +93,7 @@ article{
 }
 /* -----extra part ------  */
 #extra-header{
+    display: flex;
     margin-bottom: 10%;
 }
 .messi{
@@ -117,7 +119,6 @@ Media responsive start ------------ */
 @media   only screen and (max-width:480px) and (min-width:320px){
     header{
         
-        display:flex;
         padding:5% 0% ;
        
     }
