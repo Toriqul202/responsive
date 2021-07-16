@@ -4,8 +4,16 @@ body{
     font-family: poppins,sans-serif;
    
 }
+.carousel-control-prev-icon{
+    position: relative;
+    left:-40px;
+}
+.carousel-control-next-icon{
+    position: relative;
+    right: -40px;
+}
 /* ------------Header part edit here-------------- */
-header{
+ header{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -37,11 +45,11 @@ header{
     }
 }
 .contain h1{
-   font-size: 40px;
-   margin-bottom: 0px;
+   font-size: 50px;
+   margin-bottom: 10spx;
 }
 .contain p{
-    margin-bottom: px;
+    margin-bottom: 0px;
 }
 .contain a{
     padding: 10px 50px;
@@ -54,7 +62,7 @@ header{
     font-weight: 700;
     border:2px solid black;
     border-radius:5px ;
-}
+} 
  
 /* -----------Main part start here ---------------*/
 main{
@@ -93,6 +101,7 @@ article{
 }
 /* -----extra part ------  */
 #extra-header{
+   
     display: flex;
     margin-bottom: 10%;
 }
